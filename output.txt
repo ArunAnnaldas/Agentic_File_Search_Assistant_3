@@ -1,0 +1,38 @@
+(base) dummyUser@dummyUsers-MacBook-Air 3_Agentic_File_Search_Assistant % python main.py
+/Users/dummyUser/anaconda3/lib/python3.11/site-packages/langchain/chat_models/__init__.py:33: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/Users/dummyUser/anaconda3/lib/python3.11/site-packages/langchain/chat_models/__init__.py:33: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/Users/dummyUser/Documents/Learning/AgenticAI/3_Agentic_File_Search_Assistant/main.py:5: LangChainDeprecationWarning: Importing get_openai_callback from /Users/dummyUser/anaconda3/lib/python3.11/site-packages/langchain/callbacks/__init__.py is deprecated. Please replace deprecated imports:
+
+>> from /Users/dummyUser/anaconda3/lib/python3.11/site-packages/langchain/callbacks/__init__.py import get_openai_callback
+
+with new imports of:
+
+>> from langchain_community.callbacks.manager import get_openai_callback
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.callbacks import get_openai_callback
+/Users/dummyUser/Documents/Learning/AgenticAI/3_Agentic_File_Search_Assistant/main.py:37: LangChainDeprecationWarning: The class `ChatOpenAI` was deprecated in LangChain 0.0.10 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-openai package and should be used instead. To use it run `pip install -U :class:`~langchain-openai` and import as `from :class:`~langchain_openai import ChatOpenAI``.
+  llm = ChatOpenAI(temperature=0,
+/Users/dummyUser/Documents/Learning/AgenticAI/3_Agentic_File_Search_Assistant/main.py:45: LangChainDeprecationWarning: LangChain agents will continue to be supported, but it is recommended for new use cases to be built with LangGraph. LangGraph offers a more flexible and full-featured framework for building agents, including support for tool-calling, persistence of state, and human-in-the-loop workflows. For details, refer to the `LangGraph documentation <https://langchain-ai.github.io/langgraph/>`_ as well as guides for `Migrating from AgentExecutor <https://python.langchain.com/docs/how_to/migrate_agent/>`_ and LangGraph's `Pre-built ReAct agent <https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/>`_.
+  agent = initialize_agent(
+/Users/dummyUser/Documents/Learning/AgenticAI/3_Agentic_File_Search_Assistant/main.py:54: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  response = agent.run("Search for the word 'invoice' in files")
+🔍 Agent Response:
+ No files contain the word 'invoice'.
+Tokens Used: 430
+	Prompt Tokens: 371
+		Prompt Tokens Cached: 0
+	Completion Tokens: 59
+		Reasoning Tokens: 0
+Successful Requests: 2
+Total Cost (USD): $0.0006745
+(base) dummyUser@dummyUsers-MacBook-Air 3_Agentic_File_Search_Assistant % 

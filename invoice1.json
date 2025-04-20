@@ -1,0 +1,6 @@
+{
+  "invoice_id": "INV001",
+  "client": "Arun Technologies",
+  "amount": 1500,
+  "description": "Invoice for web development services"
+}
